@@ -47,3 +47,24 @@ Lab 2: Implementing Azure Virtual Networks
 4.  **VNet Peering:**
 
     -   Set up VNet peering between the two VNets (`10.0.0.0/16` and `10.1.0.0/16`) to enable communication between them.
+
+
+Lab 3: Deploying Azure App Service Web Apps
+-------------------------------------------
+
+### Key Steps:
+
+1.  **Create an Azure App Service Plan:**
+
+    -   In the **Azure portal**, create an **App Service Plan**.
+    -   Choose the **Free** or **Basic** tier for the plan.
+    -   Select your region and resource group.
+2.  **Deploy a Web Application:**
+
+    -   Create a new **Web App** under the App Service Plan you just created.
+    -   Choose your preferred runtime stack (e.g., Node.js, .NET, Python).
+    -   Once deployed, access the web app using the provided default Azure URL.
+3.  **SSL Certificate and Custom Domain:**
+
+    -   Due to limitations of the chosen App Service Plan, implementing an SSL certificate and custom domain setup is not possible.
+    -   Upgrading to a higher-tier plan (e.g., Standard or Premium) would be required to enable these features.
