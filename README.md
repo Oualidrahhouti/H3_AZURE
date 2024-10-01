@@ -68,3 +68,28 @@ Lab 3: Deploying Azure App Service Web Apps
 
     -   Due to limitations of the chosen App Service Plan, implementing an SSL certificate and custom domain setup is not possible.
     -   Upgrading to a higher-tier plan (e.g., Standard or Premium) would be required to enable these features.
+
+Lab 4: Managing Azure Storage Accounts and Blobs
+------------------------------------------------
+
+### Key Steps:
+
+1.  **Create a Storage Account:**
+
+    -   In the **Azure portal**, create a new **Storage Account**.
+    -   Choose the resource group, region, and select a replication option (e.g., **Locally Redundant Storage (LRS)**).
+    -   Review and create the storage account.
+2.  **Upload a Blob:**
+
+    -   Navigate to the storage account and go to the **Containers** section.
+    -   Create a new container and upload your first blob (file) into the container using the **Azure Portal**.
+3.  **Generate a Shared Access Signature (SAS) Token:**
+
+    -   In the storage account, go to the **Shared Access Signature** section.
+    -   Configure the permissions (e.g., read, write) and set an expiration date for the token.
+    -   Generate the SAS token and use it to provide secure access to your blob without exposing your account key.
+4.  **Add a Delete Rule via Lifecycle Management Policies:**
+
+    -   Go to the **Lifecycle Management** section of the storage account.
+    -   Add a rule to automatically delete blobs older than a specified number of days (e.g., 30 days).
+    -   Save the rule, and Azure will enforce this policy to manage blob retention automatically.
