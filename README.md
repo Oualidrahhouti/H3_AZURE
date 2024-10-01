@@ -26,3 +26,24 @@ Lab 1: Creating and Managing Azure Virtual Machines
     -   Replace `<path-to-private-key>` with the path to your private key file, `<username>` with the username you configured, and `<public-ip>` with the VM's public IP address.
 
     -   Enter the private key passphrase if prompted, to establish the connection.
+
+
+Lab 2: Implementing Azure Virtual Networks
+------------------------------------------
+
+### Key Steps:
+
+1.  **Address Space:**
+
+    -   Create a Virtual Network (VNet) with the address space `10.0.0.0/16`.
+2.  **Subnets:**
+
+    -   Inside the VNet, create two subnets:
+        -   Subnet 1: `10.0.1.0/24`
+   
+3.  **Virtual Network 2:**
+
+    -   Create a second VNet with different address spaces, such as `10.1.0.0/16`.
+4.  **VNet Peering:**
+
+    -   Set up VNet peering between the two VNets (`10.0.0.0/16` and `10.1.0.0/16`) to enable communication between them.
