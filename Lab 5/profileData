@@ -1,0 +1,6 @@
+-- Insert fixtures into profile table
+INSERT INTO profile (id, name, age, email) VALUES (1, 'Alice Smith', 30, 'alice.smith@example.com');
+INSERT INTO profile (id, name, age, email) VALUES (2, 'Bob Johnson', 25, 'bob.johnson@example.com');
+INSERT INTO profile (id, name, age, email) VALUES (3, 'Charlie Brown', 35, 'charlie.brown@example.com');
+INSERT INTO profile (id, name, age, email) VALUES (4, 'Diana Prince', 28, 'diana.prince@example.com');
+INSERT INTO profile (id, name, age, email) VALUES (5, 'Evan Wright', 40, 'evan.wright@example.com');
