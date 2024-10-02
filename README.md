@@ -119,3 +119,30 @@ Lab 5: Implementing Azure SQL Databases
     -   In the **Azure portal**, navigate to your SQL database and select **Geo-replication** under the **Settings** section.
     -   Choose a secondary region for replication and configure the settings to enable high availability.
     -   Monitor the replication status, ensuring the database is continuously synced across regions for disaster recovery.
+
+Lab 7: Implementing Azure Functions
+-----------------------------------
+
+### Key Steps:
+
+1.  **Create an Azure Function App:**
+
+    -   In the **Azure portal**, navigate to **Function App** and click **+ Create**.
+    -   Choose your resource group, provide a name for the function app, select the runtime stack (e.g., .NET, Python, or Node.js), and choose your hosting options (e.g., consumption plan).
+    -   Review and create the function app.
+2.  **Develop a Serverless Function Triggered by an HTTP Request:**
+
+    -   Once the Function App is created, go to the **Functions** section and click **+ Add** to create a new function.
+    -   Select **HTTP Trigger** as the function template.
+    -   Write the function code that will respond to HTTP requests. For example, a simple function that returns "Hello, World!".
+    -   Test the function by accessing the HTTP endpoint provided in the **Azure portal**.
+3.  **Integrate the Function with Azure Storage or Azure Queue:**
+
+    -   In the **Function App**, navigate to the **Integrate** tab.
+    -   Configure input or output bindings for **Azure Storage** (e.g., Blob Storage) or **Azure Queue** to interact with other services.
+    -   For example, you can configure the function to process messages from a storage queue or upload data to blob storage.
+4.  **Monitor Function Performance and Logs:**
+
+    -   In the **Azure portal**, go to **Monitor** for the function app.
+    -   View real-time metrics such as execution count, errors, and latency.
+    -   Access detailed logs to troubleshoot issues or verify the function's behavior.
