@@ -146,3 +146,55 @@ Lab 7: Implementing Azure Functions
     -   In the **Azure portal**, go to **Monitor** for the function app.
     -   View real-time metrics such as execution count, errors, and latency.
     -   Access detailed logs to troubleshoot issues or verify the function's behavior.
+
+Lab 7: Implementing Azure Functions
+-----------------------------------
+
+### Key Steps:
+
+1.  **Create an Azure Function App:**
+
+    -   In the **Azure portal**, navigate to **Function App** and click **+ Create**.
+    -   Choose your resource group, provide a name for the function app, select the runtime stack (e.g., .NET, Python, or Node.js), and choose your hosting options (e.g., consumption plan).
+    -   Review and create the function app.
+2.  **Develop a Serverless Function Triggered by an HTTP Request:**
+
+    -   Once the Function App is created, go to the **Functions** section and click **+ Add** to create a new function.
+    -   Select **HTTP Trigger** as the function template.
+    -   Write the function code that will respond to HTTP requests. For example, a simple function that returns "Hello, World!".
+    -   Test the function by accessing the HTTP endpoint provided in the **Azure portal**.
+3.  **Integrate the Function with Azure Storage or Azure Queue:**
+
+    -   In the **Function App**, navigate to the **Integrate** tab.
+    -   Configure input or output bindings for **Azure Storage** (e.g., Blob Storage) or **Azure Queue** to interact with other services.
+    -   For example, you can configure the function to process messages from a storage queue or upload data to blob storage.
+4.  **Monitor Function Performance and Logs:**
+
+    -   In the **Azure portal**, go to **Monitor** for the function app.
+    -   View real-time metrics such as execution count, errors, and latency.
+    -   Access detailed logs to troubleshoot issues or verify the function's behavior.Lab 9: Implementing Azure Load Balancer
+---------------------------------------
+
+### Key Steps:
+
+1.  **Deploy Azure Load Balancer:**
+
+    -   In the **Azure portal**, navigate to **Load Balancers** and click **+ Create**.
+    -   Choose the **Public** or **Internal** load balancer option based on your needs.
+    -   Assign it to a resource group and choose a region.
+2.  **Configure Load Balancing Rules:**
+
+    -   After creating the Load Balancer, go to the **Load Balancing Rules** section.
+    -   Click **+ Add** to create a new rule.
+        -   Define the front-end IP (the public or internal IP the traffic will be directed to).
+        -   Select the back-end pool (a group of VMs that will handle the traffic).
+        -   Set the protocol (e.g., TCP or UDP) and define the port numbers (e.g., HTTP on port 80).
+    -   This rule will distribute incoming traffic across the virtual machines in the back-end pool.
+3.  **Set Up Health Probes:**
+
+    -   In the **Health Probes** section of the Load Balancer, click **+ Add** to configure a new health probe.
+    -   Define the probe settings:
+        -   Protocol: Choose **TCP** or **HTTP**.
+        -   Port: Specify the port that the health probe will use to check the VMs (e.g., port 80 for HTTP).
+        -   Interval and Unhealthy Threshold: Set how frequently the probe checks the health of the VMs and the number of failed attempts before considering a VM unhealthy.
+    -   The health probe ensures that only healthy VMs receive traffic. If a VM fails, it will be temporarily removed from the pool until it recovers.
