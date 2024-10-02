@@ -93,3 +93,29 @@ Lab 4: Managing Azure Storage Accounts and Blobs
     -   Go to the **Lifecycle Management** section of the storage account.
     -   Add a rule to automatically delete blobs older than a specified number of days (e.g., 30 days).
     -   Save the rule, and Azure will enforce this policy to manage blob retention automatically.
+
+Lab 5: Implementing Azure SQL Databases
+---------------------------------------
+
+### Key Steps:
+
+1.  **Deploy an Azure SQL Database:**
+
+    -   In the **Azure portal**, create a new **Azure SQL Database**.
+    -   Choose your resource group, set a database name, and select a **SQL Server** (create a new one if necessary).
+    -   Configure the pricing tier and performance level according to your needs.
+    -   Review and create the database.
+2.  **Configure Firewall Settings:**
+
+    -   After the database is created, navigate to **Firewall and Virtual Networks** under the database settings.
+    -   Add your client IP address to allow access to the SQL database.
+    -   Save the firewall rules to enable external connections.
+3.  **Import Data into the Database:**
+
+    -   Use **SQL Server Management Studio (SSMS)** or **Azure Data Studio** to connect to the database using the server name, username, and password.
+    -   Once connected, import a dataset or run SQL scripts to populate the database with data.
+4.  **Implement Geo-Replication for High Availability:**
+
+    -   In the **Azure portal**, navigate to your SQL database and select **Geo-replication** under the **Settings** section.
+    -   Choose a secondary region for replication and configure the settings to enable high availability.
+    -   Monitor the replication status, ensuring the database is continuously synced across regions for disaster recovery.
