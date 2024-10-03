@@ -230,3 +230,31 @@ Lab 10: Configuring Azure Backup and Recovery Services
 
     -   To restore a resource, go to the **Backup Items** section and select the resource you want to restore.
     -   Choose a recovery point from the available backups and initiate the restore process.
+
+
+Lab 14: Configuring Azure DNS and Custom Domains
+------------------------------------------------
+
+### Key Steps:
+
+1.  **Create an Azure DNS Zone:**
+
+    -   In the **Azure portal**, navigate to **DNS Zones** and click **+ Create**.
+    -   Select your subscription and resource group, then provide a unique **domain name** for the DNS zone (e.g., `mydomain.com`).
+    -   Click **Review + Create** to deploy the DNS zone.
+2.  **Manage DNS Records for Custom Domain:**
+
+    -   After the DNS zone is created, go to the **DNS Zone** page and click **+ Record set** to add DNS records.
+    -   Set up different DNS record types:
+        -   **A Record**: Maps the domain name to an IP address.
+        -   **CNAME Record**: Maps a domain to another domain (useful for subdomains like `www`).
+        -   **TXT Record**: Used for domain verification or security purposes.
+3.  **Configure Domain Verification and Mapping for Azure Services:**
+
+    -   If using custom domains with Azure services (e.g., App Service), navigate to the service settings and add your custom domain.
+    -   Follow the provided instructions to verify the domain ownership by adding specific DNS records (e.g., a **TXT** record).
+    -   Once verified, you can map the custom domain to your Azure service.
+4.  **Implement DNS Aliases (CNAME) and Record Sets:**
+
+    -   Set up **CNAME** records to point subdomains (like `www.mydomain.com`) to the primary domain or another service.
+    -   Use record sets to group multiple DNS records under the same domain, making it easier to manage DNS entries.
