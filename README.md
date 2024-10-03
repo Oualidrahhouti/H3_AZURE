@@ -198,3 +198,34 @@ Lab 7: Implementing Azure Functions
         -   Port: Specify the port that the health probe will use to check the VMs (e.g., port 80 for HTTP).
         -   Interval and Unhealthy Threshold: Set how frequently the probe checks the health of the VMs and the number of failed attempts before considering a VM unhealthy.
     -   The health probe ensures that only healthy VMs receive traffic. If a VM fails, it will be temporarily removed from the pool until it recovers.
+
+Lab 10: Configuring Azure Backup and Recovery Services
+------------------------------------------------------
+
+### Key Steps:
+
+1.  **Create a Recovery Services Vault:**
+
+    -   In the **Azure portal**, navigate to **Recovery Services Vaults** and click **+ Create**.
+    -   Choose your resource group, provide a name for the vault, and select a region.
+    -   Review and create the Recovery Services Vault.
+2.  **Configure Backup for Resources:**
+
+    -   Note: It is required to have resources (such as VMs or file shares) available to configure backups.
+    -   In the **Recovery Services Vault**, navigate to **Backup**.
+    -   Select the resource type you want to back up (e.g., **Azure Virtual Machines** or **Azure Files**).
+    -   Choose the resources from the list and configure the backup policy (set the backup frequency and retention period).
+3.  **Perform a Backup Operation:**
+
+    -   Once the backup policy is configured, initiate a backup by going to the **Backup Items** section.
+    -   Select the resource you want to back up, then click **Backup Now** to manually trigger a backup.
+    -   The status of the backup operation can be monitored in the **Backup Jobs** section.
+4.  **Configure Backup Policies and Retention:**
+
+    -   Under the **Backup Policies** section in the Recovery Services Vault, create or modify a backup policy.
+    -   Set the frequency of backups (e.g., daily or weekly) and configure the retention policy to define how long backups should be kept.
+    -   Apply the policy to your backup resources to automate the process.
+5.  **Perform a Restore Operation:**
+
+    -   To restore a resource, go to the **Backup Items** section and select the resource you want to restore.
+    -   Choose a recovery point from the available backups and initiate the restore process.
