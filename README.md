@@ -147,6 +147,24 @@ Lab 7: Implementing Azure Functions
     -   View real-time metrics such as execution count, errors, and latency.
     -   Access detailed logs to troubleshoot issues or verify the function's behavior.
 
+Lab 8: Using Azure Cognitive Services
+-------------------------------------
+
+### Key Steps:
+
+1.  **Create an Azure Cognitive Services Resource:**
+
+    -   In the **Azure portal**, navigate to **Cognitive Services** and click **+ Create**.
+    -   Choose the appropriate subscription and resource group.
+    -   Select the **Cognitive Service** type you need (e.g., Text Analytics, Computer Vision, or Speech).
+    -   Provide a name for the resource and select the region where it will be deployed.
+    -   Choose the **Pricing Tier** based on your requirements and review the other settings.
+    -   Click **Review + Create** to finalize the creation of the service.
+2.  **Retrieve API Keys and Endpoints:**
+
+    -   Once the Cognitive Services resource is created, go to the **Keys and Endpoint** section.
+    -   Copy the **API keys** and **endpoint URL** that will be used for authentication in your applications.
+
 Lab 9: Implementing Azure Load Balancer and Traffic Manager
 -----------------------------------------------------------
 
